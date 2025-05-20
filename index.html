@@ -14,7 +14,8 @@
         <div class="logo">
             <a href="#"><img src="assets/LOGO.png" alt="Logo"></a>
         </div>
-        <div class="navigators">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <div class="navigators" id="nav-links">
             <a href="#home">Home</a>
             <a href="#internships">Experience</a>
             <a href="#about">About Me</a>
@@ -33,7 +34,7 @@
                 Proficient in front-end technologies. Collaborative team player with excellent communication skills.
                 Committed to continuous learning and staying abreast of industry trends to deliver cutting-edge solutions.
             </p>
-            <a href="assets/GoliAsritVardhanResume.pdf"><button>Resume</button></a>
+            <a href="assets/GoliAsritVardhan(AI Engineer).pdf"><button>Resume</button></a>
             <a href="#contact"><button>Contact Me</button></a>
         </div>
         <div id="photo">
@@ -45,24 +46,26 @@
     <h1 class="heading" style="padding-left: 30px;">Experience</h1>
     <section id="internships">
         <div class="exp">
+            <h2><i class="fas fa-briefcase"></i> Blockchain Researcher and Developer</h2>
+            <h4><i class="fas fa-building"></i> Diigoo</h4>
+            <h3>MAY 2025- Present</h3>
+            <p>Working as a blockchain reseracher and developer at Diigoo.</p>
+            <a href="https://diigoo.com/">
+                <img id="diigoo" src="assets/diigoo_logo.jpeg" alt="Diigoo">
+            </a>
+        </div>
+        <div class="exp">
             <h2><i class="fas fa-briefcase"></i> WordPress Developer</h2>
             <h4><i class="fas fa-building"></i> Alphause</h4>
-            <h3>JUN 2024-PRESENT</h3>
+            <h3>JUN 2024-JAN 2025</h3>
             <p>Maintained the content in the website.</p>
             <a href="https://alphause.com/">
                 <img id="alphause" src="assets/alphause.png" alt="Alphause">
             </a>
         </div>
-        <div class="exp">
-            <h2><i class="fas fa-briefcase"></i> WordPress Developer</h2>
-            <h4><i class="fas fa-building"></i> VISH & VIN</h4>
-            <h3>JUN 2024- JULY 2024</h3>
-            <p>Developed and maintained e-commerce websites for clients using WordPress and WooCommerce.</p>
-            <a href="https://vishandvin.com/">
-                <img id="vishandvin" src="assets/vish&vin.jpg " alt="Vish & Vin">
-            </a>
-        </div>
+        
     </section>
+
 
     <!-- About Me Section -->
     <h1  class="heading" style="padding-left: 30px;">About Me</h1>
@@ -123,23 +126,141 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <h1  class="heading"  style="padding-left: 30px;">Portfolio</h1>
-    <section id="projects">
-        <div class="projects">
-            <h2>FitHealth Bot</h2>
-            <p>A healthcare chatbot that provides basic remedies to user queries.</p>
-            <img id="proj-img" src="assets/fithealth.jpg" alt="FitHealth Bot">
-            <a href="https://github.com/asritvardhan/fithealthbot">View </a>
+<!-- Portfolio Section -->
+
+<section class="slider-section" data-slider>
+  <h1 class="heading" style="padding-left: 30px;">Portfolio</h1>
+
+  <div class="slider-wrapper">
+    <button class="scroll-btn left-btn">&#10094;</button>
+
+    <div class="scroll-container">
+      <!-- Project 1 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>Network Monitoring System using ML and NLP</h3>
+          <h4>Feb 2025 - Present</h4>
+          <p>
+            The AI-Enhanced Network Monitoring System is a real-time solution for tracking network security, performance, and traffic using the Syslog Protocol. Developed with Flask, React, and SQLite, it leverages ML and NLP for automated insights and smarter management. The BART algorithm summarizes complex logs, while the T5 model generates intelligent alerts. Anomaly detection is powered by the Isolation Forest algorithm, identifying unusual activity and potential threats. With a user-friendly dashboard, the system enhances security, reduces manual effort, and ensures efficient network performance.
+          </p>
         </div>
-        <div class="projects">
-            <h2>Web Based healthcare chatbot</h2>
-            <p>A healthcare chatbot that provides basic remedies to user queries.</p>
-            <img id="proj-img" src="assets/webbasedhealthcarechatbot.png" alt="FitHealth Bot">
-            <a href="https://github.com/asritvardhan/Web-Based-Health-Care-Chat-Bot">View</a>
+        <div class="entry-video">
+          <video src="assets/nms.mp4" controls muted></video>
         </div>
-        
-    </section>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>House Price Prediction Using Random Forest</h3>
+          <h4>Dec 2024 - Jan 2025</h4>
+          <p>
+            Developed a house price prediction model using Random Forest Regression to estimate property values based on features like location, size, and amenities. Preprocessed the dataset with handling of missing values, encoding of categorical variables, and feature scaling. Tuned model parameters for improved accuracy and reduced overfitting. Achieved strong performance with high R² and low RMSE on the test set. Deployed insights to assist in real estate decision-making and pricing strategies.
+          </p>
+        </div>
+        <div class="entry-video">
+          <video src="assets/housePrice.mp4" controls muted></video>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>Web Based Healthcare Chatbot</h3>
+          <h4>Oct 2024 - Nov 2024</h4>
+          <p>
+            Built a web-based healthcare chatbot using Rasa for natural language understanding and dialogue management. Designed to assist users with common health-related queries, symptom checking, and appointment guidance. Integrated custom intents, entities, and stories for a smooth conversational flow. Deployed the chatbot on a user-friendly web interface with real-time response capabilities. Enhanced accessibility and support in healthcare communication through intelligent automation.
+          </p>
+        </div>
+        <div class="entry-video">
+          <video src="assets/healthbot.mp4" controls muted></video>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-btn right-btn">&#10095;</button>
+  </div>
+
+  <div class="indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+<!---job simulations-->
+<section class="slider-section" data-slider>
+  <h1 class="heading" style="padding-left: 30px;">Job Simulations</h1>
+
+  <div class="slider-wrapper">
+    <button class="scroll-btn left-btn">&#10094;</button>
+
+    <div class="scroll-container">
+      <!-- Simulation 1 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>Accenture UK Developer and Technology</h3>
+          <h4>APR 2025</h4>
+          <p>
+           Completed the Accenture UK Developer & Technology Virtual Experience on Forage, gaining a strong understanding of the Software Development Lifecycle. Researched emerging tech trends, with a focus on DevOps. Delivered a presentation comparing Agile and Waterfall methodologies. Designed a custom algorithm using pseudocode and flow diagrams, and debugged Python code by identifying and fixing syntax and logic errors.
+          </p>
+        </div>
+        <div class="entry-img">
+          <img src="assets/accenture.png"></img>
+        </div>
+      </div>
+
+      <!-- Simulation 2 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>AWS APAC Solutions Architecture</h3>
+          <h4>MAY 2025</h4>
+          <p>
+           Completed the AWS APAC Solutions Architecture Virtual Experience Program on Forage (May 2025). Designed a simple, scalable hosting architecture using Elastic Beanstalk for a growing client facing performance issues. Clearly explained the proposed solution in plain language, ensuring client understanding of both functionality and cost structure.
+          </p>
+        </div>
+        <div class="entry-img">
+          <img src="assets/aws.png"></img>
+        </div>
+      </div>
+
+      <!-- Simulation 3 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>Skyscanner Front-End Software Engineering</h3>
+          <h4>MAR 2025</h4>
+          <p>
+            Completed the Skyscanner Front-End Software Engineering Virtual Experience Program on Forage (March 2025). Built a web application using React, developing a travel date selection page with Skyscanner’s open-source Backpack library. Customized the app and ran automated tests to ensure proper rendering and functionality.
+          </p>
+        </div>
+        <div class="entry-img">
+          <img src="assets/skyscanner.png"></img>
+        </div>
+      </div>
+      <!-- Simulation 4 -->
+      <div class="entry">
+        <div class="entry-text">
+          <h3>Tata Group Data Visualisation: Empowering Business with Effective Insights</h3>
+          <h4>MAR 2025</h4>
+          <p>
+            Completed the Tata Data Visualisation: Empowering Business with Effective Insights Job Simulation on Forage (March 2025). Created data visualizations for Tata Consultancy Services to support executive decision-making. Prepared key questions for a client leadership meeting and designed visuals to present data-driven insights effectively.
+          </p>
+        </div>
+        <div class="entry-img">
+          <img src="assets/tata.png"></img>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-btn right-btn">&#10095;</button>
+  </div>
+
+  <div class="indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
 
     <!-- Contact Me Section -->
     <h1 class="heading"  style="padding-left: 30px;">Contact Me</h1>
@@ -154,7 +275,7 @@
                 <a href="https://github.com/asritvardhan/" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="assets/GoliAsritVardhanResume.pdf"><button>Resume</button></a>
+                <a href="assets/GoliAsritVardhan(AI Engineer).pdf"><button>Resume</button></a>
             </div>
         </div>
         <div id="form">
@@ -170,6 +291,12 @@
 
     <!-- Scripts -->
     <script>
+        // hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementsByClassName('navigators');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');});
         // Tabs functionality
         const tabs = document.querySelectorAll(".tab-link");
         const contents = document.querySelectorAll(".tabcontent");
@@ -181,6 +308,29 @@
                 contents[index].classList.add("active");
             });
         });
+document.querySelectorAll('[data-slider]').forEach(section => {
+  const container = section.querySelector('.scroll-container');
+  const dots = section.querySelectorAll('.dot');
+  const left = section.querySelector('.left-btn');
+  const right = section.querySelector('.right-btn');
+
+  function updateDots() {
+    const index = Math.round(container.scrollLeft / container.offsetWidth);
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) dots[index].classList.add('active');
+  }
+
+  container.addEventListener('scroll', updateDots);
+
+  right?.addEventListener('click', () => {
+    container.scrollBy({ left: container.offsetWidth, behavior: 'smooth' });
+  });
+
+  left?.addEventListener('click', () => {
+    container.scrollBy({ left: -container.offsetWidth, behavior: 'smooth' });
+  });
+});
+
 
         // Google Sheets Form Submission
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyK39WOH3TdLO2Rj6Ls1eG67ff2Iw6VhVWqaGQ3mLr_-EZp151VwobQkkiKpTHcqsJ4hA/exec';
