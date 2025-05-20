@@ -31,7 +31,14 @@ nav {
     height: 55px;
     padding-top: 10px; 
 }
-
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
 .navigators {
     display: flex;
@@ -561,14 +568,6 @@ nav {
   .logo img {
     height: 45px;
   }
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
   .navigators {
     flex-direction: column;
     width: 100%;
